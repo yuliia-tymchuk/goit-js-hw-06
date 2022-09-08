@@ -9,12 +9,12 @@ const ingredients = [
 
 const listItems = [];
 ingredients.forEach((element) => {
-  const items = document.createElement("li");
-  items.textContent = `${element}`;
-  items.classList.add("item");
-  return listItems.push(items);
+  const itemRef = document.createElement("li");
+  itemRef.textContent = `${element}`;
+  itemRef.classList.add("item");
+  return listItems.push(itemRef);
 });
 console.log(listItems);
 
-const items = document.querySelector("ul#ingredients");
-items.append(...listItems);
+const itemRef = document.querySelector("ul#ingredients");
+itemRef.append(...listItems);
