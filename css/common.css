@@ -23,6 +23,7 @@ button {
   cursor: pointer;
 }
 
+/* for task 3 */
 .gallery {
   display: flex;
   justify-content: space-around;
@@ -31,9 +32,6 @@ button {
 }
 .gallery_item {
   list-style: none;
-}
-.gallery_item:nth-child(2) {
-  order: -1;
 }
 a:hover img {
   transform: scale(1.25);
