@@ -1,12 +1,16 @@
-const form = document.querySelector(".login-form");
+const formRef = document.querySelector(".login-form");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+formRef.addEventListener("submit", (event) => {
+  event.preventDefault();
   const {
     elements: { email, password },
-  } = e.currentTarget();
+  } = event.currentTarget;
+
   if (email.value === "" || password.value === "") {
-    return alert("Not all form fields are filled!");
+    alert("Не все поля заполнены!");
   }
-  e.currentTarget.reset();
+
+  const objects = { Email: email.value, Password: password.value };
+
+  formRef.reset();
 });
