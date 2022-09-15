@@ -12,5 +12,6 @@ formRef.addEventListener("submit", (event) => {
 
   const objects = { Email: email.value, Password: password.value };
 
+  console.log(objects);
   formRef.reset();
 });
