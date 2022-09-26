@@ -8,6 +8,7 @@ formRef.addEventListener("submit", (event) => {
 
   if (email.value === "" || password.value === "") {
     alert("Не все поля заполнены!");
+    return;
   }
 
   const objects = { Email: email.value, Password: password.value };
